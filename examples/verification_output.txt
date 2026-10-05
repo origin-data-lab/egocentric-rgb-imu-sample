@@ -1,0 +1,31 @@
+== 1. SHA-256 manifest
+  OK   DATA_CARD.md
+  OK   LICENSE.md
+  OK   README.md
+  OK   annotations/interaction_events.json
+  OK   annotations/task_structure.json
+  OK   capture/video_preview_aligned_19p55s.mp4
+  OK   metadata/capture_metadata_public.json
+  OK   quality/integrity_report.json
+  OK   sensors/app_level_accelerometer_clip.csv
+  OK   sensors/app_level_gyroscope_clip.csv
+  OK   sensors/native_accelerometer_clip.csv
+  OK   sensors/native_gyroscope_clip.csv
+  OK   tools/verify_odl_sample.py
+  unlisted files: none
+== 2. Stream statistics (from sensor_timestamp_ns)
+  app_level_accelerometer_clip.csv: n=2001 rate=102.353Hz mean=9.7701 median=9.7408 p95=9.7409 p99=12.1769 max=21.9177ms >20ms=1 >50ms=0 >100ms=0 dup=0 nonmono=0
+  app_level_gyroscope_clip.csv: n=1998 rate=102.162Hz mean=9.7884 median=9.7408 p95=12.1752 p99=12.1769 max=21.9177ms >20ms=1 >50ms=0 >100ms=0 dup=0 nonmono=0
+  native_accelerometer_clip.csv: n=8028 rate=410.641Hz mean=2.4352 median=2.4353 p95=2.4360 p99=2.4360 max=2.4360ms >20ms=0 >50ms=0 >100ms=0 dup=0 nonmono=0
+  native_gyroscope_clip.csv: n=8028 rate=410.641Hz mean=2.4352 median=2.4353 p95=2.4360 p99=2.4360 max=2.4360ms >20ms=0 >50ms=0 >100ms=0 dup=0 nonmono=0
+== 3. Cross-stream consistency (app-level vs native)
+  accelerometer: app timestamps found in native = 2001/2001; native/app value ratio min=9.806650 max=9.806651
+  gyroscope: app timestamps found in native = 1998/1998; native/app value ratio min=1.000000 max=1.000000
+== 4. Visual-inertial lag (gyro vs image motion)
+  column used: t_clip_ms
+  best shift = 0 ms (R2=0.798); R2 at 0 ms = 0.798
+  window 0 (0.0-4.9s): best -4 ms, R2=0.833
+  window 1 (4.9-9.7s): best -2 ms, R2=0.788
+  window 2 (9.7-14.6s): best 0 ms, R2=0.891
+  window 3 (14.6-19.5s): best 2 ms, R2=0.820
+  Interpretation: negative shift = IMU timestamps are LATE relative to video by |shift|; correct with t_video_corrected = t_video + shift.
