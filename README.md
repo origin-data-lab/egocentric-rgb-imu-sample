@@ -229,9 +229,9 @@ Our work spans field sourcing, worker onboarding, capture operations, sensor and
 
 ## Dataset Access
 
-The complete evaluation payload will be distributed through Origin Data Lab's dataset release channel.
+The complete evaluation payload is available through Origin Data Lab's Hugging Face dataset release.
 
-**Hugging Face access will be added here after publication.**
+**Dataset:** https://huggingface.co/datasets/origin-data-lab/egocentric-rgb-imu-sample
 
 ---
 
