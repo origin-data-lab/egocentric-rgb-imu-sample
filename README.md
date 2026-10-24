@@ -78,7 +78,7 @@ RGB and IMU in this public excerpt are **software-aligned**.
 
 The package does **not** claim hardware synchronization, frame-level synchronization, or sub-frame synchronization.
 
-### Post-correction pre-release checks
+### Visual-inertial alignment checks
 
 | Check | Result |
 |---|---:|
@@ -87,7 +87,7 @@ The package does **not** claim hardware synchronization, frame-level synchroniza
 | Method A quarter-window shifts | **−4, −2, 0, +2 ms** |
 | Stated alignment uncertainty | **within one 30 fps video frame (33 ms)** |
 
-These are **in-sample pre-release visual-inertial checks**.
+These are **in-sample visual-inertial checks** on the released excerpt.
 
 See **[Timing Validation](docs/TIMING_VALIDATION.md)** for methodology and interpretation.
 

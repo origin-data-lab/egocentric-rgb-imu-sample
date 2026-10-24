@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use or reference this work, please cite it as below."
+type: software
+title: "Egocentric RGB + IMU Task Sample (Technical Field Note #02)"
+authors:
+  - name: "Origin Data Lab"
+    website: "https://origindatalab.io"
+date-released: 2026-10-06
+url: "https://origindatalab.io/technical-field-notes/egocentric-rgb-imu-task-sample.html"
+repository-code: "https://github.com/origin-data-lab/egocentric-rgb-imu-sample"
+abstract: "First-party egocentric RGB + IMU capture with measured sensor rates, software-derived temporal alignment and reproducible integrity checks."
+keywords:
+  - egocentric data
+  - RGB + IMU
+  - visual-inertial alignment
+  - robot learning
+  - Physical AI
