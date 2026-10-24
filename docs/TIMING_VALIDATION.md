@@ -17,7 +17,7 @@ The released timing process consists of:
 
 The visual-inertial refinement applied to the source session was **−446 ms**. This corrected the source capture-session offset before publication.
 
-## Post-Correction Validation
+## Validation After Alignment
 
 ### Method A — Packaged Verifier
 
@@ -36,14 +36,14 @@ R² at 0 ms:       0.798
 | 9.7–14.6 s | 0 ms | 0.891 |
 | 14.6–19.5 s | +2 ms | 0.820 |
 
-### Method B — Pre-release Cross-check
+### Method B — Cross-check
 
 ```text
 Best shift: +6 ms
 Pearson r:  0.929
 ```
 
-Across the pre-release checks, observed window shifts were approximately **−4 ms to +8 ms**.
+Across these checks, observed window shifts were approximately **−4 ms to +8 ms**.
 
 ## Stated Uncertainty
 
@@ -53,10 +53,10 @@ Near-zero software-derived residual estimates must not be represented as hardwar
 
 ## Validation Scope
 
-These checks are visual-inertial, performed on the released excerpt, in-sample, and pre-release. They are not held-out validation and do not establish hardware synchronization.
+These checks are visual-inertial, performed in-sample on the released excerpt. They are not held-out validation and do not establish hardware synchronization.
 
 ## Safe Description
 
-> The public RGB + IMU excerpt is software-aligned using capture-session time anchors and visual-inertial refinement. Residual offset was approximately 0 to +6 ms in pre-release checks, with stated alignment uncertainty within one 30 fps video frame (33 ms).
+> The public RGB + IMU excerpt is software-aligned using capture-session time anchors and visual-inertial refinement. Residual offset was approximately 0 to +6 ms in these checks, with stated alignment uncertainty within one 30 fps video frame (33 ms).
 
 Do not describe this sample as hardware synchronized, frame synchronized, or sub-frame synchronized.
